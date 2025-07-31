@@ -4,16 +4,23 @@
   <meta charset="utf-8">
   <title>UAA 5/6 Tackle Sign-Ups</title>
 
-  <!-- Facebook preview (Open Graph) -->
+  <!-- Open Graph for Facebook preview -->
   <meta property="og:title"       content="UAA 5/6 Tackle Football Sign-Ups" />
   <meta property="og:description" content="Register now for Union Academy’s 5th/6th grade tackle football season!" />
   <meta property="og:image"       content="https://jason3d.github.io/uaa-redirect/uaa-helmet-field.png" />
   <meta property="og:url"         content="https://jason3d.github.io/uaa-redirect/" />
 
-  <!-- Delay so Facebook can scrape OG tags before redirecting -->
+  <!-- Safety for non-JS clients: small delay redirect -->
   <meta http-equiv="refresh" content="5; url=https://uaa.sportngin.com/register/form/292538301?fbclid=IwZXh0bgNhZW0CMTEAAR4E4EFTMHJLELiOI3pp79nmHcwwxOutVp5uyzSwuBgSfMb7nBW_vSPB8_QGFg_aem_4kE7_HgbiumBoq0RDGAOyQ" />
+  
+  <script>
+    // JS redirect after 2 seconds for real users
+    setTimeout(function(){
+      window.location.href = "https://uaa.sportngin.com/register/form/292538301?fbclid=IwZXh0bgNhZW0CMTEAAR4E4EFTMHJLELiOI3pp79nmHcwwxOutVp5uyzSwuBgSfMb7nBW_vSPB8_QGFg_aem_4kE7_HgbiumBoq0RDGAOyQ";
+    }, 2000);
+  </script>
 </head>
 <body>
-  <p>Redirecting to UAA 5/6 Tackle sign-ups…</p>
+  <p>Redirecting to UAA 5/6 Tackle sign-ups… If you aren’t forwarded automatically, <a href="https://uaa.sportngin.com/register/form/292538301?fbclid=IwZXh0bgNhZW0CMTEAAR4E4EFTMHJLELiOI3pp79nmHcwwxOutVp5uyzSwuBgSfMb7nBW_vSPB8_QGFg_aem_4kE7_HgbiumBoq0RDGAOyQ">click here</a>.</p>
 </body>
 </html>
